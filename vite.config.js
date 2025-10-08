@@ -22,43 +22,43 @@ export default defineConfig({
         start_url: '/',
         icons: [
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-72-72.png',
             sizes: '72x72',
             type: 'jpg/png'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-96-96.png',
             sizes: '96x96',
             type: 'jpg/png'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-128-128.png',
             sizes: '128x128',
             type: 'jpg/png'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-144-144.png',
             sizes: '144x144',
             type: 'jpg/png'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-152-152.png',
             sizes: '152x152',
             type: 'jpg/png'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-192-192.png',
             sizes: '192x192',
             type: 'jpg/png',
             purpose: 'maskable'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-384-384.png',
             sizes: '384x384',
             type: 'jpg/png'
           },
           {
-            src: './public/images/yt end logo.jpg',
+            src: './public/icons/android-launchericon-512-512.png',
             sizes: '512x512',
             type: 'jpg/png'
           }
