@@ -13,44 +13,44 @@ const Images = () => {
     const mockImages = [
       {
         id: 1,
-        url: "/images/church-gallery-1.jpg",
+        url: "/public/images/church-gallery-1.jpg",
         caption: "సండే ఆరాదన ",
-        date: "2024-01-15",
+        date: "2018-01-15",
         category: "worship"
       },
       {
         id: 2,
-        url: "/images/church-gallery-2.jpg",
-        caption: "యూత్  సమావేశం",
+        url: "/public/images/church-gallery-2.jpg",
+        caption: "ఉపవాస ప్రార్దనలు 2024",
         date: "2024-01-20",
         category: "youth"
       },
       {
         id: 3,
-        url: "/images/church-gallery-3.jpg",
-        caption: "చర్చి భవనం",
-        date: "2024-01-25",
+        url: "/public/images/church-gallery-3.jpg",
+        caption: "చర్చి బ్యానర్ ",
+        date: "2016-07-27",
         category: "building"
       },
       {
         id: 4,
-        url: "/images/church-gallery-4.jpg",
-        caption: "కోయిర్ గానం",
-        date: "2024-02-01",
-        category: "choir"
+        url: "/public/images/church-gallery-4.jpg",
+        caption: "క్రిస్మస్ - 2024",
+        date: "2024-12-25",
+        category: "క్రిస్మస్ "
       },
       {
         id: 5,
-        url: "/images/church-gallery-5.jpg",
-        caption: "గ్రూప్ ప్రార్థన",
-        date: "2024-02-05",
+        url: "/public/images/church-gallery-5.jpg",
+        caption: "ఉపవాస ప్రార్దనలు ",
+        date: "2025 -09 -10",
         category: "prayer"
       },
       {
         id: 6,
-        url: "/images/church-gallery-6.jpg",
-        caption: "ప్రార్దన సందర్బం ",
-        date: "2024-02-10",
+        url: "/public/images/church-gallery-6.jpg",
+        caption: "సంగసబ్యులు ",
+        date: "2022-02-10",
         category: "festival"
       }
     ];
