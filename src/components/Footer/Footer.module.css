@@ -1,0 +1,234 @@
+.footer {
+  background: var(--background-card);
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+  padding: 3rem 0 1rem;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footerSection h3,
+.footerSection h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: var(--primary-color) !important;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.churchDescription,
+.teluguDescription {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.teluguDescription {
+  font-family: 'Noto Sans Telugu', sans-serif;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.footerLink:hover {
+  color: var(--primary-color);
+}
+
+.serviceTimes,
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.serviceItem,
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.serviceItem svg,
+.contactItem svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.newsletterText {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.newsletterForm {
+  margin-top: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  background: var(--background-light);
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.newsletterInput:focus {
+  outline: none;
+}
+
+.newsletterButton {
+  padding: 0.75rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletterButton:hover {
+  background: var(--primary-dark);
+}
+
+.successMessage {
+  background: #10b981;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.copyright p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright svg {
+  color: #ef4444;
+}
+
+.footerNav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottomLink {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.bottomLink:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footerNav {
+    justify-content: center;
+  }
+  
+  .copyright p {
+    justify-content: center;
+  }
+}
+
+*{
+  font-family: ramabhadra, poppins, sans-serif;
+  font-size: large;
+}

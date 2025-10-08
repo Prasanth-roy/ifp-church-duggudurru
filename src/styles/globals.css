@@ -1,0 +1,252 @@
+:root {
+  /* Light Theme Colors */
+  --primary-color: #4f46e5;
+  --primary-dark: #4338ca;
+  --accent-color: #f59e0b;
+  --accent-dark: #d97706;
+  --background-light: #f8fafc;
+  --background-card: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+  --primary-color: #6366f1;
+  --primary-dark: #4f46e5;
+  --accent-color: #f59e0b;
+  --accent-dark: #d97706;
+  --background-light: #0f172a;
+  --background-card: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --border-color: #334155;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Base Font Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* English font */
+  background-color: var(--background-light);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Telugu Text Class */
+.telugu-text {
+  font-family: 'Ramabhadra', 'Poppins', sans-serif; /* Telugu font */
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Automatic Telugu Detection */
+[lang="te"],
+.telugu-text,
+.telugu-content {
+  font-family: 'Ramabhadra', 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* English Text (explicit) */
+.english-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings with proper font inheritance */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* English headings */
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.telugu-text h1,
+.telugu-text h2,
+.telugu-text h3,
+.telugu-text h4,
+.telugu-text h5,
+.telugu-text h6,
+[lang="te"] h1,
+[lang="te"] h2,
+[lang="te"] h3,
+[lang="te"] h4,
+[lang="te"] h5,
+[lang="te"] h6 {
+  font-family: 'Ramabhadra', 'Poppins', sans-serif; /* Telugu headings */
+  font-weight: 400;
+}
+
+/* Button Fonts */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.telugu-text .btn,
+[lang="te"] .btn {
+  font-family: 'Ramabhadra', 'Poppins', sans-serif;
+}
+
+/* Input and Form Elements */
+input, textarea, select, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.telugu-text input,
+.telugu-text textarea,
+.telugu-text select,
+.telugu-text button,
+[lang="te"] input,
+[lang="te"] textarea,
+[lang="te"] select,
+[lang="te"] button {
+  font-family: 'Ramabhadra', 'Poppins', sans-serif;
+}
+
+/* Container and Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: var(--accent-color);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.card {
+  background: var(--background-card);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  .telugu-text {
+    font-size: 15px; /* Slightly larger for better readability */
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    font-family: 'Ramabhadra', 'Poppins', sans-serif;
+  }
+  
+  .telugu-text {
+    font-family: 'Ramabhadra', sans-serif;
+  }
+}

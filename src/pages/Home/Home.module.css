@@ -1,0 +1,240 @@
+.home {
+  min-height: 100vh;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.quickLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.quickLink {
+  background: var(--background-card);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.quickLink:hover {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.quickLinkIcon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.quickLink h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.quickLink p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.latestSection,
+.announcementsSection {
+  background: var(--background-card);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  height: fit-content;
+}
+
+.subSectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.songsList {
+  margin-bottom: 2rem;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.songItem:hover {
+  background: var(--background-light);
+}
+
+.songNumber {
+  background: var(--primary-color);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.songInfo h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.songInfo p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.announcementsList {
+  margin-bottom: 2rem;
+}
+
+.announcementItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--background-light);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--accent-color);
+}
+
+.announcementItem svg {
+  color: var(--accent-color);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.announcementItem span {
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.serviceTimes {
+  background: var(--background-light);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.serviceTimes h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.serviceItem:last-child {
+  border-bottom: none;
+}
+
+.serviceItem strong {
+  color: var(--text-primary);
+}
+
+.marqueeContainer {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marqueeContent {
+  display: inline-block;
+  padding-left: 100%;
+}
+
+.marqueeItem {
+  display: inline-block;
+  padding: 0 2rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.marqueeItem:after {
+  content: "•";
+  position: absolute;
+  right: -0.5rem;
+  color: var(--accent-color);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .quickLinks {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .quickLink {
+    padding: 1.5rem;
+  }
+  
+  .latestSection,
+  .announcementsSection {
+    padding: 1.5rem;
+  }
+  
+  .serviceItem {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

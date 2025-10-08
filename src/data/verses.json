@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "date": "2025-10-05",
+    "ref": "John 3:16",
+    "telugu_text": "దేవుడు లోకాన్ని ఇంతగా ప్రేమించే కాదు, ఆయన ఏకైక కుమారుని ఇచ్చాడు. ఆయనను విశ్వసించేవాడెవడైనా నశించక నిత్యజీవము పొందేటందుకే.",
+    "english_text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+    "tags": ["spiritual", "salvation"],
+    "bg_image_url": "/images/verse-bg-1.jpg"
+  },
+  {
+    "id": 2,
+    "date": "2025-10-06",
+    "ref": "Philippians 4:13",
+    "telugu_text": "నాకు బలము కలిగించే క్రీస్తు ద్వారా సర్వమును చేయగలను.",
+    "english_text": "I can do all this through him who gives me strength.",
+    "tags": ["motivational", "strength"],
+    "bg_image_url": "/images/verse-bg-2.jpg"
+  },
+  {
+    "id": 3,
+    "date": "2025-10-07",
+    "ref": "Psalm 23:1",
+    "telugu_text": "ప్రభువే నా కాపరి, నాకేమియు కొరతలేదు.",
+    "english_text": "The Lord is my shepherd, I lack nothing.",
+    "tags": ["comfort", "peace"],
+    "bg_image_url": "/images/verse-bg-3.jpg"
+  }
+]
